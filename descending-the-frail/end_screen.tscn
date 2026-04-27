@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://duyjr2ydqd0u2"]
+
+[node name="endScreen" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -34.0
+offset_top = -32.0
+offset_right = 1208.0
+offset_bottom = 694.0
+mouse_filter = 2
+color = Color(0.07876385, 0.04068011, 0.11096791, 1)
+
+[node name="eventText" type="Label" parent="."]
+anchors_preset = -1
+anchor_right = 0.089409724
+anchor_bottom = 0.11574074
+offset_left = 192.0
+offset_top = 53.0
+offset_right = 992.0
+offset_bottom = 553.0
+theme_override_colors/font_color = Color(0.66943544, 0.66550493, 7.70092e-07, 1)
+theme_override_font_sizes/font_size = 26
+text = "
+Thinking that was the guardians post,
+
+You enter the next area to find it infested with more
+
+Creatures than the last, you look down the chambers
+
+and notice the system seems to stretch farther than you can see
+
+There's still a long journey ahead of you, everyone is
+
+counting on you.
+
+Thank you for playing or watching my demo :)
+
+"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true

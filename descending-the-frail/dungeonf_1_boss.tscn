@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=4 uid="uid://bdu1ohhow2s27"]
+
+[ext_resource type="PackedScene" uid="uid://bixkivenhl7va" path="res://tile_set.tscn" id="1_xcqgb"]
+[ext_resource type="PackedScene" uid="uid://3mrjn7n3aqmg" path="res://enemy.tscn" id="2_h53pa"]
+[ext_resource type="PackedScene" uid="uid://ce6yut7t6vtpa" path="res://player.tscn" id="3_rw2xv"]
+[ext_resource type="PackedScene" uid="uid://bc40scix4rbcv" path="res://door.tscn" id="4_cfxju"]
+
+[node name="dungeonf1Boss" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -2948.0
+offset_top = -2114.0
+offset_right = 9052.0
+offset_bottom = 2886.0
+color = Color(0, 0, 0, 1)
+
+[node name="tileSet" parent="." instance=ExtResource("1_xcqgb")]
+tile_map_data = PackedByteArray("AAAIAAUAAAAAAAMAAAAJAAUAAAABAAMAAAAKAAUAAAABAAMAAAALAAUAAAABAAMAAAAMAAUAAAABAAMAAAANAAUAAAAGAAQAAAAOAAUAAAABAAEAAAAPAAUAAAABAAEAAAAQAAUAAAABAAEAAAANAAQAAAAAAAAAAAAOAAYAAAAGAAEAAAAOAAQAAAAGAAIAAAANAAYAAAAAAAIAAAARAAYAAAACAAIAAAAPAAYAAAABAAEAAAAQAAYAAAAFAAEAAAAPAAQAAAABAAEAAAARAAQAAAACAAAAAAARAAUAAAAFAAQAAAAQAAQAAAAFAAIAAAAPAAMAAAABAAAAAAAOAAMAAAAAAAAAAAAQAAMAAAACAAAAAAAOAAcAAAAAAAIAAAAPAAcAAAABAAIAAAAQAAcAAAACAAIAAAASAAUAAAACAAMAAAA=")
+
+[node name="enemy" parent="." instance=ExtResource("2_h53pa")]
+position = Vector2(1017.0001, 355)
+scale = Vector2(2.5, 2.5)
+enemy_name = "boss"
+battle_id = "dungeon_f_1_boss_battle1"
+return_scene_path = "res://dungeon_f_1_boss.tscn"
+
+[node name="player" parent="." instance=ExtResource("3_rw2xv")]
+position = Vector2(551, 337)
+scale = Vector2(2.5, 2.5)
+
+[node name="Area2D" parent="." instance=ExtResource("4_cfxju")]
+position = Vector2(1145, 331)
+next_scene_path = "res://end_screen.tscn"

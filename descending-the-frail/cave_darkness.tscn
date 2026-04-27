@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvw5fgvb0pgw1"]
+
+[ext_resource type="Script" uid="uid://bv7vpfko0rje6" path="res://cave_darkness.gd" id="1_1rhs8"]
+
+[node name="CaveDarkness" type="CanvasLayer"]
+script = ExtResource("1_1rhs8")
+
+[node name="DarknessRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -42343.0
+offset_top = -21337.0
+offset_right = 58990.0
+offset_bottom = 47574.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

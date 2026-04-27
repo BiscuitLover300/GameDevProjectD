@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch6j4xas13hcr"]
+
+[ext_resource type="Script" uid="uid://b1uvkoytidfin" path="res://battle_hud.gd" id="1_g88et"]
+
+[sub_resource type="Theme" id="Theme_53kb3"]
+
+[node name="battleHUD" type="CanvasLayer"]
+script = ExtResource("1_g88et")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 67.0
+offset_top = 450.0
+offset_right = 1042.0
+offset_bottom = 603.0
+theme = SubResource("Theme_53kb3")
+color = Color(0.120595515, 0.4758528, 0.33032572, 0.31764707)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 475.0
+offset_right = 300.0
+offset_bottom = 575.0
+text = "Strike"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 810.0
+offset_top = 475.0
+offset_right = 1010.0
+offset_bottom = 575.0
+text = "Heal"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 580.0
+offset_top = 475.0
+offset_right = 780.0
+offset_bottom = 575.0
+text = "Intimidate"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 340.0
+offset_top = 475.0
+offset_right = 540.0
+offset_bottom = 575.0
+text = "Flay"
