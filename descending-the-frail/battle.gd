@@ -26,7 +26,7 @@ var enemies = {
 	},
 	"bird": {
 		"name": "bird",
-		"texture": preload("res://Enemies/slime.png"),
+		"texture": preload("res://Enemies/birdo.png"),
 		"hp": 100,
 		"moves": [
 			{"name": "peck", "damage": 20, "chance": 50},
